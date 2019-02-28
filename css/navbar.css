@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+:root {
+  --mainbc: #0B0C0A;
+  --secbc: #1F2833;
+  --headercol: #66FCF1;
+  --textcol: #C5C6C7;
+  --secondaryblue: #45A29E;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 200;
+}
+
+main {
+  background: var(--secbc);
+}
+
+header {
+  background: var(--mainbc);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.name {
+  color: var(--headercol);
+}
+
+.toggle-nav {
+  display: none;
+}
+
+.toggle-nav-lbl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.toggle-nav-lbl span,
+.toggle-nav-lbl span::before,
+.toggle-nav-lbl span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.toggle-nav-lbl span::before,
+.toggle-nav-lbl span::after {
+  content: '';
+  position: absolute;
+}
+
+.toggle-nav-lbl span::before {
+  bottom: 7px;
+}
+
+.toggle-nav-lbl span::after {
+  top: 7px;
+}
+
+main {
+  padding: 10em 1em;
+}
+
+nav {
+  background: var(--mainbc);
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  top: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 200ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+nav a {
+  margin: 0;
+  padding: 0.5em;
+  color: var(--textcol);
+  display: block;
+  background: var(--mainbc);
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  background: var(--secbc);
+}
+
+.toggle-nav:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.toggle-nav:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out 200ms;
+}
+
+@media screen and (min-width: 850px) {
+
+  main {
+    padding: 10em 15em;
+  }
+
+  .toggle-nav-lbl {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 7fr);
+  }
+
+  .name {
+    grid-column: 2 / 3;
+    align-self: left;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: var(--headercol);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+    border-radius: 2px;
+  }
+
+  nav a::after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: var(--headercol);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms 100ms;
+    border-radius: 2px;
+  }
+
+  nav a:hover::before, 
+  nav a:hover::after {
+    transform: scale(1, 1);
+  }
+
+}

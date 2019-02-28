@@ -1,0 +1,26 @@
+
+:root {
+  --mainbc: #0B0C0A;
+  --secbc: #1F2833;
+  --headercol: #66FCF1;
+  --textcol: #C5C6C7;
+  --secondaryblue: #45A29E;
+}
+
+.header {
+	color: var(--headercol);
+}
+
+#review, #references {
+	color: var(--textcol);
+}
+
+#references ul {
+	list-style-type: square;
+}
+
+#references ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--secondaryblue);
+}
