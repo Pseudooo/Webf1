@@ -43,5 +43,6 @@ article video {
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
 
