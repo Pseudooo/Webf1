@@ -1,12 +1,4 @@
 
-:root {
-  --mainbc: #0B0C0A;
-  --secbc: #1F2833;
-  --headercol: #66FCF1;
-  --textcol: #C5C6C7;
-  --secondaryblue: #45A29E;
-}
-
 .header {
 	color: var(--headercol);
 }
