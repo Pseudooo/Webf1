@@ -125,7 +125,7 @@ nav a:hover {
 @media screen and (min-width: 850px) {
 
   main {
-    padding: 10em 15em;
+    padding: 8em 15em;
   }
 
   .toggle-nav-lbl {
@@ -142,7 +142,7 @@ nav a:hover {
   }
 
   nav {
-    
+    all: unset;
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
