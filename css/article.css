@@ -1,8 +1,8 @@
 article {
 	background: var(--mainbc);
 	border-radius: 8em 1em;
-	padding: 1em 3em;
-	margin-bottom: 5em;
+	padding: 1em 3em 3em 3em;
+	margin-bottom: 2em;
 }
 
 article h1,
