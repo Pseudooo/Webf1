@@ -11,6 +11,20 @@ article h2 {
 	text-align: right;
 }
 
+article h3 {
+	color: var(--headercol);
+}
+
+article h4,
+article ol li {
+	color: var(--textcol);
+	font-weight: normal;
+}
+
+h3 ~ p {
+	margin-left: 1em;
+}
+
 article p {
 	color: var(--textcol);
 }

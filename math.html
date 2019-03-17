@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>UP903466 | Maths</title>
+		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/article.css">
+
+		<!-- A library I'm using to allow for inline LaTeX -->
+		<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
+	</head>
+	
+	<body>
+
+		<!-- navigational markup -->
+		<header>
+			<h1 class="name">UP903466</h1>
+			<input type="checkbox" class="toggle-nav" id="toggle-nav">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="http://validator.w3.org/check?uri=referer" target="_blank">Validator</a></li>
+					<li><a href="litrev.html">Lit. Review</a></li>
+					<li><a href="discoverylog.html">Disc. Log</a></li>
+					<li><a href="#">Math</a></li>
+				</ul>
+			</nav>
+			<label for="toggle-nav" class="toggle-nav-lbl">
+				<span></span>
+			</label>
+		</header>
+
+		<!-- main content markup -->
+		<main>
+
+			<article>
+				<h1>Question 01</h1>
+
+				<p>Let $A=\{x,y,z\}$</p>
+
+				<h3>(i) Give three elements from the cartesian product $P(A)\times A$</h3>
+
+				<ol>
+					<li>$\left(\{\}, x\right)\in P(A)\times A$</li>
+					<li>$\left(\{\}, y\right)\in P(A)\times A$</li>
+					<li>$\left(\{\}, z\right)\in P(A)\times A$</li>
+				</ol>
+
+				<h3>(ii) How many elements are in the cartesian product $P(A)\times A$?</h3>
+
+				<p>We know for some set, $S$, such that $|S|=n$ the power set of $S$ will have a cardinality of: $|P(S)|=2^{n}$. With this information we can further state that given: $|A|=3\\$We know that:$\\|P(A)|=2^{3}\\|P(A)\times A|=3\cdot2^{3}=24$</p>
+
+				<h3>A proof for $|A|=n\iff |P(A)=2^{n}|$</h3>
+
+				<p>We're going to prove this with mathematical induction. Before starting any of the induction work allow us to define a set $S_{n}$ such that for any natural n: $S_{n}=\{a_{1}, a_{2}, a_{3}, \dots, a_{n-1}, a_{n}\}\implies|S_{n}|=n$. This means that for our first inductive step we can state that $S_{0}=\emptyset$ which also means $|S_{0}|=0$. Regarding the powerset of $S$ it's trivial to know the only possible power set is $P\left(S_{0}\right)=\{\emptyset\}$ Further proving our first statement for case $n=0$; $|P(S_{0})|=1=2^{0}\\$Now for the second inductive step we can assume that the following is true: $|P(S_{n})|=2^{n}\\$Our final inductive step is to show that $|P(S_{n+1})|=2^{n+1}$. Now, in order to do this we can state: $S_{n+1}=\{a_{1}, a_{2}, a_{3}, \dots, a_{n-1}, a_{n}, a_{n+1}\}\\S_{n+1}=\{a_{1}, a_{2}, a_{3}, \dots, a_{n-1}, a_{n}\}\cup\{a_{n+1}\}\\S_{n+1}=S_{n}\cup\{a_{n+1}\}\\$By writing $S_{n+1}$ like this it is trivial to state that every subset of $S_n$ is also a subset of $S_{n+1}$. Now we know that there is $2^n$ subsets of $S_{n}$ for $S_{n+1}$ however a given subset either contains $a_{n+1}$ or it does not. So for $S_{n+1}$ there will be $2^n$ subsets that contain $a_{n+1}$ and $2^n$ subsets that do not contain $a_{n+1}$ giving; $|P(S_{n+1})|=2^{n}+2^{n}\\|P(S_{n+1})|=2\cdot2^{n}\\|P(S_{n+1})|=2^{n+1}$ Q.E.D.</p>
+
+			</article>
+
+			<article>
+				<h1>Question 02</h1>
+
+				<p>In each of the following statements replace '?' with a value such that the statement is true. If there is no solution give a reason. If there is more than one solution, give all of the possible solutions</p>
+				
+				<h3>(i) $\{?, ?, ?\}\in\{1,2,3,\{5,6,7\}\}$</h3>
+
+				<ol>
+					<li>$\{5,6,7\}\in\{1,2,3,\{5,6,7\}\}$</li>
+				</ol>
+
+				<h3>(ii) $\{\{?, ?\}\}\subseteq\{1,2,\{3,4\}\}$</h3>
+				
+				<ol>
+					<li>$\{\{3, 4\}\}\subseteq\{1,2,\{3,4\}\}$</li>
+				</ol>
+
+				<h3>(iii) $\{?, ?\}\subset\{1,2,3,\{4,5\}\}$</h3>
+
+				<ol>
+					<li>$\{1,2\}\subset\{1,2,3,\{4,5\}\}$</li>
+					<li>$\{1,3\}\subset\{1,2,3,\{4,5\}\}$</li>
+					<li>$\{2,3\}\subset\{1,2,3,\{4,5\}\}$</li>
+					<li>$\{1,\{4,5\}\}\subset\{1,2,3,\{4,5\}\}$</li>
+					<li>$\{2,\{4,5\}\}\subset\{1,2,3,\{4,5\}\}$</li>
+					<li>$\{3,\{4,5\}\}\subset\{1,2,3,\{4,5\}\}$</li>
+				</ol>
+
+			</article>
+
+			<article>
+				<h1>Question 03</h1>
+
+				<p>Let $A$, $B$ and $C$ be sets. Is it true that: </p>
+				<p>$\left(A\cup B\right)\cap C=A\cup\left(B\cap C\right)$</p>
+				<p>Prove the statement or find a counter example.</p>
+
+				<h3>Counter example:</h3>
+				<p>Allow us to define the following: $\\A:=\{x\}\\B:=\{y\}\\C:=\{z\}\\$ With this information we can evaluate both $\left(A\cup B\right)\cap C$ and $A\cup\left(B\cap C\right)$ and compare their outputs. $\left(A\cup B\right)\cap C=\emptyset\\A\cup\left(B\cap C\right)=A\\A\neq\emptyset\\$ Therefore, proving it is false.</p>
+
+			</article>
+
+			<article>
+				<h1>Question 04</h1>
+				
+				<p>There is a group of 191 students. 10 of which are taking operating systems, databases and discrete mathematics. 36 are taking operating systems and databases, 20 are taking operating systems and discrete mathematics, 18 are taking discrete mathematics and databases, 65 are taking operating systems, 76 are taking databases and 63 are taking discrete mathematics.</p>
+
+				<p>Before starting on any other parts of the question allow us to setup some information more formally and mathematically.$\\|\varepsilon|=191\\O:=\text{Students that study Operating Systems}\\D:=\text{Students that study Databases}\\M:=\text{Students that study Discrete Mathematics}\\$From each of these we can start collecting more information.</p>
+
+				<p>10 Students study all three subjects giving us, $|O\cap D\cap M|=10$</p>
+
+				<p>36 Students study both operating systems and databases, $|O\cap D|=36$, from which we can further find $|O\cap D\cap\overline{M}|=|O\cap D|-|O\cap D\cap M|=26$</p>
+
+				<p>18 Students study both maths and databases, $|M\cap D|=18$, from which we can further find $|M\cap D\cap\overline{O}|=|M\cap D|-|O\cap D\cap M|=8$</p>
+
+				<p>20 Students study both maths and operating systems, $|M\cap O|=20$, from which we can further find $|M\cap O\cap\overline{D}|=|M\cap O|-|O\cap D\cap M|=10$</p>
+
+				<p>65 Students study operating systems, $|O|=65$, giving, $|O\cap\overline{M}\cap\overline{D}|=|O|-|O\cap M|-|O\cap D|+|O\cap D\cap M|=19$</p>
+
+				<p>76 Students study databases: $|D|=76$, giving, $|D\cap\overline{O}\cap\overline{M}|=|D| - |D\cap O| - |D\cap M| + |O\cap D\cap M|=32$</p>
+
+				<p>63 Students study mathematics: $|M|=63$, giving, $|M\cap\overline{O}\cap\overline{D}|=|M|-|M\cap O| - |M\cap D| + |O\cap D\cap M|=35$</p>
+
+				<h3>(i) How many are taking discrete mathematics or operating systems (or both) but not databases?</h3>
+
+				<p>With the information that we've collected about the system we can now start to calculate other values that might be useful. The one that is being requested in this question is formally written as $|\left(M\cup O\right)\cap\overline{D}|$ from which we can calculate as: $|M| + |O| - |M\cap O| - |M\cap D\cap\overline{O}| - |O\cap D\cap\overline{M}| - |O\cap D\cap M|=64$</p>
+
+				<h3>(ii) How many are taking none of the three subjects?</h3>
+
+				<p>In (i) we found that $|\left(M\cup O\right)\cap\overline{D}|=64$ and we're also given that $|\varepsilon|=191$. Now with what we did in the last question we can find out $|M\cup O\cup D|=|\left(M\cup O\right)\cap\overline{D}| + |D| = 140$. Now we can formally write the students that don't study any of the three subjects as $|\overline{M}\cap\overline{O}\cap\overline{D}|$ which is equal to $|\varepsilon|-|M\cup O\cup D|=51$ giving us $|\overline{M}\cap\overline{O}\cap\overline{D}|=51$</p>
+
+			</article>
+
+			<article>
+				<h1>Question 05</h1>
+
+				<p>Let $n>3, n\in\mathbb{N}$ and $A=\{1,2,3,\dots,n\}$.</p>
+
+				<h3>(i) How many subsets of $A$ contain the elements 1 and 2?</h3>
+
+				<p>We can approach this question with the same logical reasoning as we did for the proof in question 1.</p>
+
+				<p>A power set is a set of all possible subsets of a given set, and we have already proven that the cardinality of a subset, $|P(A)|=2^{n}$. So, using this information we can deduce that $2^{n-1}$ subsets of $A$ contain the element 1 and $2^{n-1}$ subsets do not contain the element of 1. Now for each of these $2^{n-1}$ subsets half of them will contain the element 2 and the other half will not. This means that we can devide our subsets into four groups:</p>
+				<ol>
+					<li>$2^{n-2}$ subsets contain neither 1 or 2.</li>
+					<li>$2^{n-2}$ subsets contain 1 but not 2.</li>
+					<li>$2^{n-2}$ subsets contain 2 but not 1.</li>
+					<li>$2^{n-2}$ subsets contain both 1 and 2.</li>
+				</ol>
+
+				<p>Which gives us our desired answer, $2^{n-2}$ of the subsets contain both the elements 1 and 2.</p>
+
+				<h3>(ii) How many subsets B of A have the property that $B\cap\{1, 2\}=\emptyset$?</h3>
+
+				<p>Using the same ground-work that we applied in (i). It's a trivial statement that in order for $B\cap\{1,2\}=\emptyset$, $B$ must not contain the elements 1 or 2. And we previously deduced that there is $2^{n-2}$ subsets that do not contain 1 or 2.</p>
+
+				<h3>(iii) How many subsets B of A have the property that $B\cup\{1,2\}=A$?</h3>
+
+				<p>Now in order for the statement to be true the following must also be true $\{3, 4,\dots,n-1, n\}\subset B$ as $B$ must contain all other elements (With exceptions of 1 and 2 although they may also be present). So this means we're only interested in four of our possible subsets because there's only four possible sets that do/don't contain 1 and 2 but do contain every other element, which is required for $B\cup\{1,2\}=A$.</p>
+
+			</article>
+
+		</main>
+
+	</body>
+
+</html>
