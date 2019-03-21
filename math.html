@@ -62,7 +62,7 @@
 				<p>We're going to prove this with mathematical induction. Before starting any of the induction work allow us to define a set $S_{n}$ such that for any natural n: $S_{n}=\{a_{1}, a_{2}, a_{3}, \dots, a_{n-1}, a_{n}\}\implies|S_{n}|=n$. This means that for our first inductive step we can state that $S_{0}=\emptyset$ which also means $|S_{0}|=0$. Regarding the powerset of $S$ it's trivial to know the only possible power set is $P\left(S_{0}\right)=\{\emptyset\}$ Further proving our first statement for case $n=0$; $|P(S_{0})|=1=2^{0}\\$Now for the second inductive step we can assume that the following is true: $|P(S_{n})|=2^{n}\\$Our final inductive step is to show that $|P(S_{n+1})|=2^{n+1}$. Now, in order to do this we can state: $S_{n+1}=\{a_{1}, a_{2}, a_{3}, \dots, a_{n-1}, a_{n}, a_{n+1}\}\\S_{n+1}=\{a_{1}, a_{2}, a_{3}, \dots, a_{n-1}, a_{n}\}\cup\{a_{n+1}\}\\S_{n+1}=S_{n}\cup\{a_{n+1}\}\\$By writing $S_{n+1}$ like this it is trivial to state that every subset of $S_n$ is also a subset of $S_{n+1}$. Now we know that there is $2^n$ subsets of $S_{n}$ for $S_{n+1}$ however a given subset either contains $a_{n+1}$ or it does not. So for $S_{n+1}$ there will be $2^n$ subsets that contain $a_{n+1}$ and $2^n$ subsets that do not contain $a_{n+1}$ giving; $|P(S_{n+1})|=2^{n}+2^{n}\\|P(S_{n+1})|=2\cdot2^{n}\\|P(S_{n+1})|=2^{n+1}$ Q.E.D.</p>
 
 			</article>
-
+			
 			<article>
 				<h1>Question 02</h1>
 
@@ -162,6 +162,15 @@
 				<h3>(iii) How many subsets B of A have the property that $B\cup\{1,2\}=A$?</h3>
 
 				<p>Now in order for the statement to be true the following must also be true $\{3, 4,\dots,n-1, n\}\subset B$ as $B$ must contain all other elements (With exceptions of 1 and 2 although they may also be present). So this means we're only interested in four of our possible subsets because there's only four possible sets that do/don't contain 1 and 2 but do contain every other element, which is required for $B\cup\{1,2\}=A$.</p>
+
+			</article>
+
+			<article>
+				<h1>Question 06</h1>
+
+				<h3>(i) Describe an infinite set $S$ in which every element is an infinite set</h3>
+
+				<p>$S=\{}
 
 			</article>
 

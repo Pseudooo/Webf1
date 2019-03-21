@@ -8,6 +8,22 @@
   --secondaryblue: #45A29E;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mainbc); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--headercol); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondaryblue); 
+}
+
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
@@ -144,7 +160,7 @@ nav a:hover {
   .name {
     grid-column: 2 / 3;
   }
-
+  
   nav {
     all: unset;
     grid-column: 3 / 4;
