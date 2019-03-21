@@ -61,3 +61,7 @@ article video {
 	display: block;
 }
 
+.quote {
+	text-decoration: italic;
+}
+
