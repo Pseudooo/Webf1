@@ -65,3 +65,6 @@ article video {
 	text-decoration: italic;
 }
 
+a {
+	color: var(--textcol);
+}

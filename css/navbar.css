@@ -162,7 +162,13 @@ nav a:hover {
   }
   
   nav {
-    all: unset;
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
